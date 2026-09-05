@@ -28,17 +28,17 @@
                     <h4>1. Datos</h4>    
                 </div>
                 <div class="campo">
-                    <label for="nombre"><strong>Nombre:</strong> </label>
+                    <label for="nombre"><strong>Nombre*</strong> </label>
                     <input type="text" id="nombre">
                 </div>
                 
                 <div class="campo">
-                    <label for="apellido"><strong>Apellidos:</strong> </label>
+                    <label for="apellido"><strong>Apellidos*</strong> </label>
                     <input type="text" id="apellido">
                 </div>
                 
                 <div class="campo">
-                    <label for="email"><strong>Correo Electrónico:</strong> </label>
+                    <label for="email"><strong>Correo Electrónico*</strong> </label>
                     <input type="email" id="email" placeholder="nombre@correo.cl">
                 </div>
                 
@@ -52,10 +52,10 @@
                 </div>
 
                 <div class="campo">
-                    <label for="asunto"><strong>Asunto</strong></label>
+                    <label for="asunto"><strong>Asunto*</strong></label>
                     <select id="asunto">
                         <option value="">Selecciona un asunto</option>
-                        <option value="consulta">Consulta general</option>
+                        <option value="consulta">Consulta General</option>
                         <option value="seguimiento">Seguimiento de Envío</option>
                         <option value="reclamo">Reclamo o Sugerencia</option>
                         <option value="otro">Otro</option>
@@ -63,8 +63,12 @@
                 </div>
 
                 <div class="campo">
-                    <label for="mensaje"><strong>Mensaje</strong></label>
+                    <label for="mensaje"><strong>Mensaje*</strong></label>
                     <textarea id="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
+                </div>
+
+                <div class= "acciones">
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
                 </div>
 
             </div>

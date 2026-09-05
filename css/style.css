@@ -69,3 +69,26 @@ body{
     letter-spacing: 2px;
 }
 
+.acciones{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-enviar{
+    background-color: rgb(6, 131, 131);
+    color:aquamarine;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    transition: background-color 0.2s ease, transform 0.1 ease;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(4, 56, 56);
+}
+
