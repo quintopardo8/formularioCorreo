@@ -14,11 +14,14 @@ body{
     border-radius: 8px;
 }
 
-.formulario input{
+.formulario input,
+.formulario select,
+.formulario textarea{
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #76AB59;
     font-size: 16px;
+    font-family: inherit;
 }
 
 .campo{
@@ -54,5 +57,15 @@ body{
     font-size: 32px;
     letter-spacing: -1.5px;
     color:#4f8f29
+}
+
+.encabezado-formulario{
+    margin-bottom: 24px;
+
+}
+
+.subtitulo{
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 

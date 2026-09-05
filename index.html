@@ -17,7 +17,16 @@
         <main class="contenedor-principal">
             
             <div class="formulario">
-                
+
+                <div class="encabezado-formulario">
+                    <p class="subtitulo">FORMULARIO DE CONTACTO</p>
+                    <h2>En qué podemos ayudarte?</h2>
+                    <p class="subtitulo">Los campos marcados con * son obligatorios</p>
+                </div>
+
+                <div class="campo">
+                    <h4>1. Datos</h4>    
+                </div>
                 <div class="campo">
                     <label for="nombre"><strong>Nombre:</strong> </label>
                     <input type="text" id="nombre">
@@ -37,8 +46,30 @@
                     <label for="telefono"><strong>Teléfono celular</strong></label>
                     <input type="tel" id="telefono" placeholder="Ej: 987000624">    
                 </div>
+                
+                <div class="campo">
+                    <h4>2. Mensaje</h4>    
+                </div>
+
+                <div class="campo">
+                    <label for="asunto"><strong>Asunto</strong></label>
+                    <select id="asunto">
+                        <option value="">Selecciona un asunto</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="seguimiento">Seguimiento de Envío</option>
+                        <option value="reclamo">Reclamo o Sugerencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje"><strong>Mensaje</strong></label>
+                    <textarea id="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
+                </div>
 
             </div>
+
+            
 
             <aside class="info">
                 <h3>Horario de Atención</h3>
