@@ -4,4 +4,55 @@
 
 body{
     background-color: var(--bg);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color:#24470f;
 }
+
+.formulario{
+    background-color: #AAF77E;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.formulario input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #76AB59;
+    font-size: 16px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.contenedor-principal{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 40px auto;
+}
+
+.info{
+    height: fit-content;
+    background-color: #AAF77E;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.encabezado{
+    max-width:1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 16px;
+}
+
+.encabezado h1{
+    margin: 0;
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: -1.5px;
+    color:#4f8f29
+}
+
