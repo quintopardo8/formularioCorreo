@@ -16,7 +16,7 @@
 
         <main class="contenedor-principal">
             
-            <div class="formulario">
+            <form id="formulario-contacto" class="formulario" novalidate>
 
                 <div class="encabezado-formulario">
                     <p class="subtitulo">FORMULARIO DE CONTACTO</p>
@@ -29,22 +29,22 @@
                 </div>
                 <div class="campo">
                     <label for="nombre"><strong>Nombre*</strong> </label>
-                    <input type="text" id="nombre">
+                    <input type="text" id="nombre" name="nombre">
                 </div>
                 
                 <div class="campo">
                     <label for="apellido"><strong>Apellidos*</strong> </label>
-                    <input type="text" id="apellido">
+                    <input type="text" id="apellido" name="apellido">
                 </div>
                 
                 <div class="campo">
                     <label for="email"><strong>Correo Electrónico*</strong> </label>
-                    <input type="email" id="email" placeholder="nombre@correo.cl">
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.cl">
                 </div>
                 
                 <div class="campo">
                     <label for="telefono"><strong>Teléfono celular</strong></label>
-                    <input type="tel" id="telefono" placeholder="Ej: 987000624">    
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 987000624">    
                 </div>
                 
                 <div class="campo">
@@ -53,7 +53,7 @@
 
                 <div class="campo">
                     <label for="asunto"><strong>Asunto*</strong></label>
-                    <select id="asunto">
+                    <select id="asunto" name="asunto">
                         <option value="">Selecciona un asunto</option>
                         <option value="consulta">Consulta General</option>
                         <option value="seguimiento">Seguimiento de Envío</option>
@@ -64,14 +64,14 @@
 
                 <div class="campo">
                     <label for="mensaje"><strong>Mensaje*</strong></label>
-                    <textarea id="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
                 </div>
 
                 <div class= "acciones">
                     <button type="submit" class="btn-enviar">Enviar Mensaje</button>
                 </div>
 
-            </div>
+            </form>
 
             
 
