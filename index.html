@@ -15,65 +15,87 @@
         </header>
 
         <main class="contenedor-principal">
-            
-            <form id="formulario-contacto" class="formulario" novalidate>
 
-                <div class="encabezado-formulario">
-                    <p class="subtitulo">FORMULARIO DE CONTACTO</p>
-                    <h2>En qué podemos ayudarte?</h2>
-                    <p class="subtitulo">Los campos marcados con * son obligatorios</p>
-                </div>
+            <section>
 
-                <div class="campo">
-                    <h4>1. Datos</h4>    
-                </div>
-                <div class="campo">
-                    <label for="nombre"><strong>Nombre*</strong> </label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-                
-                <div class="campo">
-                    <label for="apellido"><strong>Apellidos*</strong> </label>
-                    <input type="text" id="apellido" name="apellido">
-                </div>
-                
-                <div class="campo">
-                    <label for="email"><strong>Correo Electrónico*</strong> </label>
-                    <input type="email" id="email" name="email" placeholder="nombre@correo.cl">
-                </div>
-                
-                <div class="campo">
-                    <label for="telefono"><strong>Teléfono celular</strong></label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 987000624">    
-                </div>
-                
-                <div class="campo">
-                    <h4>2. Mensaje</h4>    
-                </div>
+                <form id="formulario-contacto" class="formulario" novalidate>
 
-                <div class="campo">
-                    <label for="asunto"><strong>Asunto*</strong></label>
-                    <select id="asunto" name="asunto">
-                        <option value="">Selecciona un asunto</option>
-                        <option value="consulta">Consulta General</option>
-                        <option value="seguimiento">Seguimiento de Envío</option>
-                        <option value="reclamo">Reclamo o Sugerencia</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
+                    <div class="encabezado-formulario">
+                        <p class="subtitulo">FORMULARIO DE CONTACTO</p>
+                        <h2>En qué podemos ayudarte?</h2>
+                        <p class="subtitulo">Los campos marcados con * son obligatorios</p>
+                    </div>
 
-                <div class="campo">
-                    <label for="mensaje"><strong>Mensaje*</strong></label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
-                </div>
+                    <div class="campo">
+                        <h4>1. Datos</h4>    
+                    </div>
+                    <div class="campo">
+                        <label for="nombre"><strong>Nombre*</strong> </label>
+                        <input type="text" id="nombre" name="nombre">
+                        <p class="error" data-error-for="nombre"></p>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="apellido"><strong>Apellidos*</strong> </label>
+                        <input type="text" id="apellido" name="apellido">
+                        <p class="error" data-error-for="apellido"></p>    
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email"><strong>Correo Electrónico*</strong> </label>
+                        <input type="email" id="email" name="email" placeholder="nombre@correo.cl">
+                        <p class="error" data-error-for="email"></p>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="telefono"><strong>Teléfono celular</strong></label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 987000624">    
+                        <p class="error" data-error-for="telefono"></p>
+                    </div>
+                    
+                    <div class="campo">
+                        <h4>2. Mensaje</h4>    
+                    </div>
 
-                <div class= "acciones">
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-                </div>
+                    <div class="campo">
+                        <label for="asunto"><strong>Asunto*</strong></label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="seguimiento">Seguimiento de Envío</option>
+                            <option value="reclamo">Reclamo o Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <p class="error" data-error-for="asunto"></p>
 
-            </form>
+                    </div>
 
-            
+                    <div class="campo">
+                        <label for="mensaje"><strong>Mensaje*</strong></label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta"></textarea>
+                        <p class="error" data-error-for="mensaje"></p>
+                    </div>
+
+                    <div class="campo campo-check">
+                        <input type="checkbox" id="privacidad" name="privacidad">
+                        <label for="privacidad">Acepto el uso de mis datos para responder la consulta</label>
+                        <p class="error" data-error-for="privacidad"></p>
+                    </div>
+
+                    <div class= "acciones">
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </div>
+
+                </form>
+
+                <section id="panel-exito" class="panel-exito is-hidden" tabindex="-1" aria-live="polite">
+                    <p class="subtitulo">MENSAJE ENVIADO</p>
+                    <h2>Gracias, <span data-exito-nombre></span></h2>
+                    <p>Recibimos tu consulta sobre <strong data-exito-asunto></strong>.</p>
+                    <p>Te responderemos al correo: <strong data-exito-email></strong></p>
+                </section>
+
+            </section>            
 
             <aside class="info">
                 <h3>Horario de Atención</h3>
@@ -84,6 +106,8 @@
 
         </main>
         
+        <script type="module" src="js/formulario.js"></script>
+
     </body>    
 
 
